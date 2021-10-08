@@ -1,0 +1,8 @@
+services:
+  details:
+    build: .
+    image: ghcr.io/kasidis69/bookinfo-productpage:dev
+    ports:
+      - "8083:8083"
+    environment:
+      SERVICE_VERSION: v1
